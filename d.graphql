@@ -1,0 +1,9 @@
+query ExampleQuery($accountId: ID!) {
+  account(id: $accountId) {
+    ERC721tokens {
+      contract { id }
+      identifier
+      uri
+    }
+  }
+}
